@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section class="vh-100 text-center text-white d-flex justify-content-center align-items-center bg-primary ">
+        <div class="container w-75 shadow">
+            <div class="content content mx-auto">
+                <h1 class="mx-auto fw-bolder">Smart Login System</h1>
+                <input oninput="validateUserName ()" class="my-3 form-control" id="userNameSignUp" type="text" placeholder="Enter your name">
+                <p id="wrongUserName" class="d-none text-danger">
+                    <i class="fa-solid fa-ban"></i>
+                    Please enter a valid user name. Start UperCase
+                </p>
+                <input oninput="validateUserEmail()" class="my-3 form-control" id="userEmailSignINUp" type="email" placeholder="Enter your email">
+                <p id="dublicatedmail" class="d-none text-danger">
+                    <i class="fa-solid fa-ban"></i>
+                    email already exists try another email
+                </p>
+                <p id="wrongEmail" class="d-none text-danger">
+                    <i class="fa-solid fa-ban"></i>
+                    Please enter a valid email address. "example@email.com"
+                </p>
+                <input oninput="validateUserPassword()" class="my-3 form-control" id="userPassWordSignINUp" type="password"
+                    placeholder="Enter your password">
+                <p id="wrongPassword" class="d-none text-danger">
+                    <i class="fa-solid fa-ban"></i>
+                    Minimum have 1 (characters and Numbers and special Char)
+                </p>
+                <button onclick="addRegester ()" id="signUpBtn" class="my-3 btn btn-outline-info px-5">Sign Up</button>
+                <p id="successMessage" class="d-none text-success text-center">
+                    success
+                    <i class="fa-regular fa-circle-check"></i>
+                </p>
+
+
+                <p class="signUpLink">
+                    You have an account?
+                    <a class="signUpLink text-white " href="./index.html">Sign In</a>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/regester.js"></script>
+</body>
+
+</html>

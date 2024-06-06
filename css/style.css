@@ -1,0 +1,23 @@
+section{
+    background-image: url('./../img-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+.container{
+    background-color: rgba(0, 0, 0, .6);
+}
+.inner{
+    overflow: hidden;
+}
+.inner img{
+    transition: all .5s;
+}
+.inner :hover img{
+   transform: scale(1.2);
+}
+
+body{
+    background-color: #09c;
+}
